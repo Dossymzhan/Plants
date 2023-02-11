@@ -139,6 +139,7 @@ a {
   line-height: 35px;
   color: #636060;
   margin-bottom: 48px;
+  width: 525px;
 }
 
 .intro-btn {
@@ -459,4 +460,205 @@ a {
 
 .social-icons:last-child {
   margin-right: 0;
+}
+
+/* Media queries for tablets 768px */
+
+@media all and (max-width: 768px) {
+  .header-container {
+    max-width: 768px;
+    height: auto;
+  }
+
+  .header-inner {
+    max-width: 668px;
+    max-height: 47px;
+    margin: 35px 50px;
+  }
+
+  .welcome-container {
+    max-width: 768px;
+    height: auto;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding: 40px 50px 70px 50px;
+  }
+
+  .leafs {
+    max-width: 280px;
+    max-height: 254px;
+  }
+
+  .intro {
+    max-width: 346px;
+  }
+
+  .intro-header {
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 341px;
+    margin-bottom: 30px;
+  }
+
+  .about-container {
+    max-width: 768px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    padding: 40px 50px 95px 50px;
+  }
+
+  .about-description {
+    width: 668px;
+  }
+
+  .about-title {
+    text-align: center;
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .houseplant {
+    max-width: 250px;
+    max-height: 258px;
+  }
+
+  .about-text {
+    margin-bottom: 78px;
+  }
+
+  .service-container {
+    max-width: 768px;
+  }
+
+  .service-description {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 50px 40px 50px;
+  }
+
+  .service-title {
+    font-size: 35px;
+    line-height: 46px;
+    margin-bottom: 40px;
+  }
+
+  .service-items {
+    padding: 0 50px 70px 50px;
+  }
+
+  .service-item {
+    margin-bottom: 38px;
+    max-width: 450px;
+  }
+
+  .service-item:nth-child(5) {
+    margin-bottom: 0;
+  }
+
+  .service-item:nth-child(6) {
+    margin-bottom: 0;
+  }
+
+  .service-item-photo {
+    width: 280px;
+    height: 350px;
+  }
+
+  .service-item-description {
+    padding: 10px 40px 20px 40px;
+    align-items: center;
+    max-width: 280px;
+    border-top: 0;
+  }
+
+  .service-item-title {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+
+  .service-item-text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+    padding: 0;
+  }
+
+  .prices-container {
+    max-width: 768px;
+    padding: 40px 50px 88px 50px;
+  }
+
+  .prices-title {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+
+  .prices-options-variations {
+    padding: 33px 40px;
+  }
+
+  .prices-gardeners > .prices-title {
+    font-size: 25px;
+    line-height: 35px;
+    padding-top: 95px;
+    margin-bottom: 22px;
+  }
+
+  .contact {
+    margin-bottom: 34px;
+  }
+
+  .contacts-container {
+    max-width: 768px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact-us {
+    order: 1;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+
+  .city-btn {
+    margin: 0;
+    margin-bottom: 250px;
+  }
+
+  .contact-woman {
+    width: 200px;
+    height: 249px;
+    margin: 0;
+  }
+
+  .footer-container {
+    max-width: 768px;
+    flex-direction: column;
+    padding: 33px 279px 21px 279px;
+  }
+
+  .footer-data {
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .rsschool {
+    margin-bottom: 16px;
+  }
+
+  .social-list {
+    height: 47px;
+  }
 }
