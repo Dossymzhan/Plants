@@ -489,6 +489,72 @@ a {
   }
 }
 
+@media all and (max-width: 1280px) {
+  .header-inner {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .service-description {
+    flex-direction: column;
+    padding: 40px 110px 90px 110px;
+  }
+
+  .service-title {
+    margin-bottom: 30px;
+  }
+
+  .contact-woman {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 940px) {
+  .intro-header {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .intro-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .leafs {
+    width: 400px;
+    height: auto;
+  }
+
+  .about-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .houseplant {
+    width: 370px;
+    height: auto;
+  }
+
+  .prices-title {
+    font-size: 35px;
+  }
+
+  .contact-us {
+    max-width: auto;
+    margin-left: 0;
+  }
+
+  .service-items {
+    justify-content: center;
+  }
+}
+
 @media all and (max-width: 768px) {
   .header-container {
     max-width: 768px;
@@ -496,7 +562,7 @@ a {
   }
 
   .header-inner {
-    max-width: 668px;
+    max-width: auto;
     max-height: 47px;
     margin: 35px 50px;
   }
@@ -684,5 +750,77 @@ a {
 
   .social-list {
     height: 47px;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .welcome-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    max-width: 300px;
+  }
+
+  .nav-list {
+    font-size: 14px;
+  }
+
+  .intro-header,
+  .about-title,
+  .service-title,
+  .prices-title,
+  .contact-us {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about-description {
+    width: auto;
+  }
+
+  .service-title {
+    margin: 30px auto;
+  }
+
+  .service-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-btns {
+    margin-bottom: 20px;
+  }
+
+  .prices-gardeners > .prices-title {
+    font-size: 20px;
+  }
+
+  .contact {
+    width: 100px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px;
+  }
+
+  .prices-container {
+    flex-wrap: wrap;
+  }
+
+  .city-btn {
+    max-width: 400px;
+  }
+
+  .footer-container {
+    padding: 20px 10px;
+  }
+
+  .service-buttons {
+    width: auto;
+  }
+
+  .city-btn {
+    max-width: 300px;
   }
 }
