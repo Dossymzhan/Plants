@@ -491,7 +491,8 @@ a {
 
 @media all and (max-width: 1280px) {
   .header-inner {
-    max-width: 80%;
+    margin: 0 30px;
+    max-width: auto;
     height: auto;
   }
 
@@ -753,15 +754,72 @@ a {
   }
 }
 
+/* Hamburger menu */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 40px;
+  border: 1px solid #717171;
+  margin: 6px auto;
+  transition: 0.3s ease-in-out;
+}
 @media all and (max-width: 630px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(4) {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+
+  .navbar {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    justify-content: start;
+    height: 300px;
+    top: 90px;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #edf2ec;
+    text-align: center;
+    transition: 0.3s;
+    padding: 0;
+  }
+
+  .nav-list {
+    margin-bottom: 10px;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
   .welcome-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .navbar {
+  /* .navbar {
     max-width: 300px;
-  }
+  } */
 
   .nav-list {
     font-size: 14px;
@@ -822,5 +880,159 @@ a {
 
   .city-btn {
     max-width: 300px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .header-inner {
+    margin: 29px 25px;
+  }
+
+  .leafs {
+    display: none;
+  }
+
+  .welcome-container {
+    padding: 24px 25px;
+  }
+
+  .intro-header {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    margin-bottom: 20px;
+  }
+
+  .intro-btn {
+    font-size: 10px;
+    line-height: 2;
+    padding: 6px 16px;
+  }
+
+  .about-wrapper {
+    padding: 30px 25px;
+  }
+
+  .about-title {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 21px;
+  }
+
+  .about-text {
+    margin-bottom: 0;
+  }
+
+  .houseplant {
+    max-width: 150px;
+    max-height: 147px;
+  }
+
+  .service-description {
+    padding: 30px 25px 40px 25px;
+  }
+
+  .service-title {
+    font-size: 25px;
+    line-height: 32px;
+    margin: 0 0 35px 0;
+    max-width: 187px;
+  }
+
+  .service-btns {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 8px 0;
+    max-width: 121px;
+    margin: 0;
+  }
+
+  .service-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 252px;
+  }
+
+  .service-item {
+    margin-bottom: 34px;
+  }
+
+  .service-items {
+    padding-bottom: 27px;
+  }
+
+  .prices-container {
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  .prices-title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .option-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 16px 30px;
+  }
+
+  .option-btn:nth-child(1) {
+    margin-bottom: 14px;
+  }
+
+  .option-btn:nth-child(2) {
+    margin-bottom: 14px;
+  }
+
+  .prices-options-variations {
+    padding: 29px 22px;
+  }
+
+  .prices-gardeners > .prices-title {
+    padding-top: 19px;
+    margin-bottom: 14px;
+  }
+
+  .prices-gardeners {
+    align-items: center;
+  }
+
+  .contact-leafs {
+    display: none;
+  }
+
+  .contact {
+    width: 121px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 6px 0;
+  }
+
+  .contact-us {
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 80px;
+  }
+
+  .city-btn {
+    margin-bottom: 132px;
+  }
+
+  .contact-woman {
+    max-width: 100px;
+    height: auto;
   }
 }
