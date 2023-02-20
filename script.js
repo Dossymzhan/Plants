@@ -16,8 +16,8 @@ document.querySelectorAll(".nav-list").forEach((n) =>
 );
 
 // Hamburger menu disappear on click window
-document.addEventListener("click", (e) => {
-  if (e.target.classlist.contains("navbar")) {
+window.addEventListener("click", (e) => {
+  if (!hamburger.contains(e.target) && !navBar.contains(e.target)) {
     hamburger.classList.remove("active");
     navBar.classList.remove("active");
   }
