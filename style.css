@@ -450,17 +450,39 @@ a {
   color: #000;
 }
 
+.github:hover {
+  color: #e06733;
+  transition: 0.3s;
+}
+
 .rsschool {
   color: #000;
+}
+
+.rsschool:hover {
+  color: #e06733;
+  transition: 0.3s;
 }
 
 .social-icons {
   margin-right: 20px;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.social-icons:hover {
+  fill: #e06733;
+  transition: 0.3s;
 }
 
 .social-icons:last-child {
   margin-right: 0;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
 }
 
 /* Media queries for tablets 1440px */
