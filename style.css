@@ -659,9 +659,9 @@ a {
     max-width: 450px;
   }
 
-  .service-item:nth-child(5) {
+  /* .service-item:nth-child(5) {
     margin-bottom: 0;
-  }
+  } */
 
   .service-item:nth-child(6) {
     margin-bottom: 0;
@@ -857,6 +857,28 @@ a {
 
   .service-btns {
     margin-bottom: 20px;
+  }
+
+  .service-items {
+    justify-content: center;
+  }
+
+  .prices-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .prices-gardeners {
+    align-items: center;
+  }
+
+  .prices-title {
+    text-align: center;
+  }
+
+  .contact-woman {
+    width: 200px;
+    height: auto;
   }
 
   .prices-gardeners > .prices-title {
