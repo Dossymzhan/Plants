@@ -247,6 +247,17 @@ a {
   cursor: pointer;
 }
 
+.service-btn-active {
+  background-color: #e06733;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.service-item-blur {
+  filter: blur(2px);
+}
+
 .service-items {
   display: flex;
   justify-content: space-between;
