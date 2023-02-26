@@ -275,6 +275,12 @@ a {
   cursor: pointer;
 }
 
+.service-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
 .service-item-title {
   padding-top: 7px;
   padding-bottom: 7px;

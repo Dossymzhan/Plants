@@ -3,10 +3,21 @@
 // Hamburger menu toggle
 const hamburger = document.querySelector(".hamburger");
 const navBar = document.querySelector(".navbar");
+const navLinks = document.querySelectorAll(".nav-list");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navBar.classList.toggle("active");
+});
+
+// Active navigation
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    navLinks.forEach(function (el) {
+      el.classList.remove("active-link");
+    });
+    link.classList.add("active-link");
+  });
 });
 
 // Hamburger menu disappear click on links
