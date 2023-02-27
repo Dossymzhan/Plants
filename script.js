@@ -35,7 +35,7 @@ const serviceItem = document.querySelectorAll(".service-item");
 
 let activeBtns = [];
 
-// Project services filter
+// Button active class on click
 serviceBtns.forEach(function (btn) {
   btn.addEventListener("click", (e) => {
     // service buttons active
@@ -47,6 +47,7 @@ serviceBtns.forEach(function (btn) {
       activeBtns = activeBtns.filter((activeBtn) => activeBtn !== btn);
     }
 
+    // Cards blur functionality
     serviceItem.forEach((item) => {
       const itemAtr = item.dataset.item;
       if (activeBtns.length === 0) {
@@ -72,3 +73,6 @@ serviceBtns.forEach(function (btn) {
     });
   });
 });
+
+// Accordion section
+

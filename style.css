@@ -337,19 +337,61 @@ a {
 
 .option-btn {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   max-width: 250px;
-  height: 50px;
   font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000;
-  padding: 16px 40px;
   background: #edf2ec;
   border-radius: 20px;
   border: none;
+  padding: 16px 40px 12px 40px;
+}
+
+.option-btn-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #aea1a1;
+  padding-bottom: 8px;
   cursor: pointer;
+}
+
+.option-btn-header > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0;
+  color: #000;
+}
+
+.option-btn-content-description {
+  font-weight: 300;
+  font-size: 10px;
+  color: #717171;
+  padding: 5px 0;
+}
+
+.option-btn-content-price {
+  font-weight: 700;
+  font-size: 16px;
+  color: #e06733;
+  margin-bottom: 8px;
+}
+
+.option-btn-content-price > span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+}
+
+.option-btn-content-order {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #717171;
+  background-color: #fff;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  padding: 3px 24px;
 }
 
 .option-btn:nth-child(1) {
@@ -381,10 +423,26 @@ a {
   color: #499a18;
 }
 
-.contact {
+.contact-btn {
   font-weight: 700;
-  background-color: #fff;
   margin-bottom: 39px;
+  font-family: "Inika", serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #e06733;
+  width: 160px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-radius: 5px;
+  border: 1px solid #e06733;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #e06733;
+  color: #fff;
+  transition: 0.2s ease-in-out;
 }
 
 .contact-leafs {
